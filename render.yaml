@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: distcache-node
+    runtime: python
+    plan: free
+    buildCommand: "true"
+    startCommand: "python scripts/run_node.py --host 0.0.0.0 --port $PORT"

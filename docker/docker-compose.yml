@@ -1,0 +1,47 @@
+name: distcache
+
+services:
+  node-0:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: distcache-node-0
+    command: ["--port", "6000"]
+    ports:
+      - "6000:6000"
+
+  node-1:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: distcache-node-1
+    command: ["--port", "6000"]
+    ports:
+      - "6001:6000"
+
+  node-2:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: distcache-node-2
+    command: ["--port", "6000"]
+    ports:
+      - "6002:6000"
+
+  node-3:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: distcache-node-3
+    command: ["--port", "6000"]
+    ports:
+      - "6003:6000"
+
+  node-4:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: distcache-node-4
+    command: ["--port", "6000"]
+    ports:
+      - "6004:6000"
